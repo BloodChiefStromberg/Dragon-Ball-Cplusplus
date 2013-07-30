@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<World>
+	<Item>
+		<name>silver key</name>
+		<displayChar>)</displayChar>
+		<weight>1</weight>
+		<value>10</value>
+		<rarity>5</rarity>
+		<enchantment>0</enchantment>
+		<quantity>0</quantity>
+	</Item>
+	<Creature>
+		<name>orc</name>
+		<displayChar>o</displayChar>
+		<level>2</level>
+		<maxHP>0</maxHP>
+		<HP>0</HP>
+	</Creature>
+	<Scroll>
+		<name>scroll of fireball</name>
+		<displayChar>?</displayChar>
+		<weight>1</weight>
+		<value>250</value>
+		<rarity>30</rarity>
+		<enchantment>0</enchantment>
+		<quantity>0</quantity>
+		<health>0</health>
+		<nutrition>0</nutrition>
+	</Scroll>
+	<Weapon>
+		<name>longsword</name>
+		<displayChar>)</displayChar>
+		<weight>20</weight>
+		<value>60</value>
+		<rarity>10</rarity>
+		<enchantment>0</enchantment>
+		<quantity>0</quantity>
+		<damage>10</damage>
+		<type>default type</type
+		<accuracy>0</accuracy>
+		<range>0</range>
+		<ammoType>defaulty ammo type</ammoType>
+	</Weapon>
+</World>

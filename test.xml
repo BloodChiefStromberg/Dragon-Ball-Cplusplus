@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<World>
+  <Item>
+    <name>silver key</name>
+    <properties>
+      <property>metal</property>
+      <property>silver</property>
+    </properties>
+    <weight>1</weight>
+    <displayChar>)</displayChar>
+    <value>10</value>
+    <rarity>5</rarity>
+  </Item>
+
+  <Creature>
+    <name>orc</name>
+    <properties>
+      <property>orcish</property>
+      <property>humanoid</property>
+    </properties>
+    <level>2</level>
+    <maxHP>15</maxHP>
+    <displayChar>o</displayChar>
+  </Creature>
+
+  <Scroll>
+    <name>scroll of fireball</name>
+    <properties>
+      <property>paper</property>
+      <property>magical</property>
+    </properties>
+    <weight>1</weight>
+    <displayChar>?</displayChar>
+    <value>250</value>
+    <rarity>30></rarity>
+  </Scroll>
+
+
+  <Weapon>
+    <name>longsword</name>
+    <type>sword</type>
+    <damage>10</damage>
+    <accuracy>2</accuracy>
+    <properties>
+       <property>metal</property>
+    </properties>
+    <weight>20</weight>
+    <value>60</value>
+    <rarity>10</rarity>
+    <displayChar>)</displayChar>
+  </Weapon>
+
+
+  <Armor>
+     <name>chainmail</name>
+     <type>medium</type>
+     <slot>chest</slot>
+     <armorValue>8</armorValue>
+     <weight>60</weight>
+     <value>80</value>
+     <rarity>10</rarity>
+     <properties>
+        <property>metal</property>
+     </properties>
+  </Armor>
+
+</World>
+
+

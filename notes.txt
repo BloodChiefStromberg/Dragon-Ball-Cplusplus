@@ -1,0 +1,42 @@
+1: I've decided not to output the location to XML, even though I've
+included the code to do so. The reason for this is because every time the
+player exits the first level of the dungeon, I'm dumping away all the dungeon
+levels, and regenerate the dungeons. This is because saving the Dungeon Levels
+as XML would take up a lot of room, so I can only save them in vectors during
+individual gaming sessions. But anyway, if I'm dumping and regenerating Dungeon
+Levels upon exiting the first floor on a dungeon, saving the location of
+Creatures would be stupid.
+
+2: We're giving the creatures move() function a DungeonLevel*. Think of this as
+a map for the level that they're on. They use it to look at the squares around
+them, see what's cool, and to access they RoomTiles they are on/moving to.
+
+3: We give attack the dungeon level to check for range, but also because we
+have to pass it to recieve damage, who passes it to die, who needs it to drop
+loot. A message system would solve this problem (die would simply send a message
+saying that this has died, and then the world could handle it), but I don't
+know how to do that. I'm frustrated with how ugly passing the dlLevel is though.
+
+4: Adding a rarity to items would be a good idea. I could add it in the form of
+an int though, 0 to 99, 0 being the most rare (percent drop). Then I could use
+this when the creature dies to decide whether or not to drop it. Easy add,
+cool addition
+
+6: RoomTile.cpp: I have to include cstddef because otherwise it says my NULL
+isn't defined in this scope. That was a weird one.
+ 
+7: Creature.cpp: On death. You may think that we forgot to remove the creature
+from the main creature list and to tell the tile that we're not there anymore!
+But the world will handle this. Every turn, the world runs a method called
+removeCarcasses(). This searches the list of creatures for ones with HP set to
+0. If the creature has died, it's because the player has killed them. So we
+remove the creatures from the tiles, tell the creatures to die, and also make
+sure to reward the player with XP
+
+9. I know this isn't the smartest thing to do. It'd make more sense, logically
+and resource wise to have the light just use the same info the player does. This
+is an "I didn't have time" decision, and I'd change it if I had more time.
+
+10: Maybe I should just have the whole inventory come along when I move the
+player. It's something to think about.
+
